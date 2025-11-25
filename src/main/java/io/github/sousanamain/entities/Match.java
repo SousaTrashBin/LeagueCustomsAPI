@@ -27,7 +27,7 @@ public class Match {
     private GameModeEnum gameModeEnum = GameModeEnum.ARAM;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "match_status",nullable = false)
+    @Column(name = "match_status", nullable = false)
     private MatchStatusEnum matchStatus = MatchStatusEnum.PENDING;
 
     @ToString.Exclude

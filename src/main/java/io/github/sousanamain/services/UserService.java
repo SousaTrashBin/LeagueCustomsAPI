@@ -17,7 +17,7 @@ public class UserService {
     public User createUser(User user) {
         if (userRepository.existsByDiscordId(user.getDiscordId())) {
             throw new WebApplicationException("User with Discord ID " + user.getDiscordId() + " already exists.",
-                                              Response.Status.CONFLICT);
+                    Response.Status.CONFLICT);
         }
 
         userRepository.persist(user);
