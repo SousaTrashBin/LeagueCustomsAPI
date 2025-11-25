@@ -8,13 +8,13 @@ import org.hibernate.proxy.HibernateProxy;
 import java.util.Objects;
 
 @Entity
-@Table(name = "match_stats")
+@Table(name = "player_match_stats")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class MatchStats {
+public class PlayerMatchStats {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(nullable = false)
@@ -56,7 +56,7 @@ public class MatchStats {
         Class<?> oEffectiveClass = o instanceof HibernateProxy ? ((HibernateProxy) o).getHibernateLazyInitializer().getPersistentClass() : o.getClass();
         Class<?> thisEffectiveClass = this instanceof HibernateProxy ? ((HibernateProxy) this).getHibernateLazyInitializer().getPersistentClass() : this.getClass();
         if (thisEffectiveClass != oEffectiveClass) return false;
-        MatchStats that = (MatchStats) o;
+        PlayerMatchStats that = (PlayerMatchStats) o;
         return getId() != null && Objects.equals(getId(), that.getId());
     }
 

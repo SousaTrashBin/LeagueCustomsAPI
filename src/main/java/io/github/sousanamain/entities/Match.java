@@ -44,7 +44,7 @@ public class Match {
 
     @ToString.Exclude
     @OneToMany(mappedBy = "match", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<MatchStats> matchStats = new LinkedHashSet<>();
+    private Set<PlayerMatchStats> playerMatchStats = new LinkedHashSet<>();
 
     public void start() {
         matchStatus = MatchStatusEnum.ON_GOING;
