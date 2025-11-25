@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.sql.Time;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -30,6 +31,12 @@ public class Match {
     @Column(name = "match_status", nullable = false)
     private MatchStatusEnum matchStatus = MatchStatusEnum.PENDING;
 
+    @Column(nullable = false)
+    private Time duration = Time.valueOf("00:00:00");
+
+    @Column(name = "start_time", nullable = false)
+    private Time startTime;
+
     @ToString.Exclude
     @ManyToMany
     @Size(max = 10)
@@ -37,7 +44,7 @@ public class Match {
 
     @ToString.Exclude
     @OneToMany(mappedBy = "match", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<MatchStats> matchStats = new LinkedHashSet<>();
+    private Set<PlayerMatchStats> playerMatchStats = new LinkedHashSet<>();
 
     public void start() {
         matchStatus = MatchStatusEnum.ON_GOING;

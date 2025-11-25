@@ -33,7 +33,7 @@ public class RiotAccount {
 
     @ToString.Exclude
     @OneToMany(mappedBy = "riotAccount", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<MatchStats> matchStats = new LinkedHashSet<>();
+    private Set<PlayerMatchStats> playerMatchStats = new LinkedHashSet<>();
 
     @Override
     public final boolean equals(Object o) {
