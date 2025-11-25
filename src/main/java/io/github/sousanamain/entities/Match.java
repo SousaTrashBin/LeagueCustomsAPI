@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.sql.Time;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -29,6 +30,12 @@ public class Match {
     @Enumerated(EnumType.STRING)
     @Column(name = "match_status", nullable = false)
     private MatchStatusEnum matchStatus = MatchStatusEnum.PENDING;
+
+    @Column(nullable = false)
+    private Time duration = Time.valueOf("00:00:00");
+
+    @Column(name = "start_time", nullable = false)
+    private Time startTime;
 
     @ToString.Exclude
     @ManyToMany

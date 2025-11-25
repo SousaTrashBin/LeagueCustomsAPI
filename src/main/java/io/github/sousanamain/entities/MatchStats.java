@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.proxy.HibernateProxy;
 
-import java.sql.Time;
 import java.util.Objects;
 
 @Entity
@@ -20,12 +19,6 @@ public class MatchStats {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(nullable = false)
     private Long id;
-
-    @Column(nullable = false)
-    private Time duration = Time.valueOf("00:00:00");
-
-    @Column(name = "start_time", nullable = false)
-    private Time startTime;
 
     @Column(nullable = false)
     private Integer kills = 0;
