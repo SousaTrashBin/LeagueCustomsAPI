@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
   <diagram name="Page-1" id="bWh2wg5y38KbTp6gs9uh">
-    <mxGraphModel dx="443" dy="999" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="533" dy="1064" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,19 +72,16 @@
           <mxGeometry x="1063" y="324" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J_pTml80FC9zX994wEbn-118" value="Rating" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Berkeley Mono Regular;" vertex="1" parent="1">
-          <mxGeometry x="870" y="109" width="157" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="J_pTml80FC9zX994wEbn-119" value="&lt;u&gt;id : Long&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=Berkeley Mono Regular;" vertex="1" parent="J_pTml80FC9zX994wEbn-118">
-          <mxGeometry y="30" width="157" height="30" as="geometry" />
+          <mxGeometry x="870" y="137" width="157" height="120" as="geometry" />
         </mxCell>
         <mxCell id="J_pTml80FC9zX994wEbn-121" value="victories : Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=Berkeley Mono Regular;" vertex="1" parent="J_pTml80FC9zX994wEbn-118">
-          <mxGeometry y="60" width="157" height="30" as="geometry" />
+          <mxGeometry y="30" width="157" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J_pTml80FC9zX994wEbn-122" value="losses : Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=Berkeley Mono Regular;" vertex="1" parent="J_pTml80FC9zX994wEbn-118">
-          <mxGeometry y="90" width="157" height="30" as="geometry" />
+          <mxGeometry y="60" width="157" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J_pTml80FC9zX994wEbn-125" value="mmr : Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=Berkeley Mono Regular;" vertex="1" parent="J_pTml80FC9zX994wEbn-118">
-          <mxGeometry y="120" width="157" height="30" as="geometry" />
+          <mxGeometry y="90" width="157" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J_pTml80FC9zX994wEbn-124" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Berkeley Mono Regular;" vertex="1" parent="1">
           <mxGeometry x="902" y="255" width="60" height="30" as="geometry" />
