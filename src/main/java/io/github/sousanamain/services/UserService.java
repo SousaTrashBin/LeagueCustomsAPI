@@ -19,7 +19,6 @@ public class UserService {
             throw new WebApplicationException("User with Discord ID " + user.getDiscordId() + " already exists.",
                     Response.Status.CONFLICT);
         }
-
         userRepository.persist(user);
         return user;
     }
