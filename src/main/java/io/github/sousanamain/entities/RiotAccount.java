@@ -14,6 +14,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @ToString
 public class RiotAccount {
     @Id
@@ -33,6 +34,7 @@ public class RiotAccount {
 
     @ToString.Exclude
     @OneToMany(mappedBy = "riotAccount", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
     private Set<MatchStats> matchStats = new LinkedHashSet<>();
 
     @Override
