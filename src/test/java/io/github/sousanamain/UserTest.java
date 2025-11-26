@@ -14,8 +14,9 @@ public class UserTest {
 
     @Test
     void testCreateUser() {
-        dummyUser = userService.createUser(dummyUser);
-        System.out.println(dummyUser);
-        assert dummyUser.getId() != null;
+        var savedUser = userService.createUser(dummyUser);
+        System.out.println(savedUser);
+        assert savedUser.getId() != null;
+        assert savedUser.getDiscordId() != null && savedUser.getId().equals(dummyUser.getId());
     }
 }
