@@ -16,7 +16,7 @@ public class UserController {
     UserService userService;
 
     @POST
-    public UserDTO createUser(UserDTO user) {
+    public UserDTO registerUser(UserDTO user) {
         if (user.discordId() == null) {
             throw new WebApplicationException("User discord id is empty");
         }
@@ -25,13 +25,24 @@ public class UserController {
         return new UserDTO(savedUser.getId(), safeDTO.discordId(), null, null);
     }
 
-    //@GET('/:discordId')
+    /*
 
-    //@GET + sorting (possibly filter)
+    @GET('/:discordId')
 
-    //@DELETE
+    @GET + sorting (possibly filter)
 
-    //@PUT <- add riot account (should validate with icon)
+    @DELETE
 
-    //@PUT <- possible season reset
+    @PUT addRiotAccount (should possibly validate with icon)
+
+    @PUT addPlayerToQueue (there should be multiple queues somehow for each gameMode)
+     | this should detect automatically if a game should be started (aka if it reaches max players)
+     | a player can be in multiple queues at the same time, and the queues should not persist
+     | this should then send a match request, which people can either accept or decline
+     | (not sure if its better to have everyone accept or at least half).
+
+    @PUT removePlayerFromQueue (...)
+
+    */
+
 }
